@@ -1,0 +1,21 @@
+<h1>
+  {{title}}
+</h1>
+
+{{remain()}} out of {{todos.length}}
+<a href="javascript:void(0);" (click)="archive()">[archive]</a>
+
+<hr>
+
+<ul>
+  <li *ngFor="let t of todos"><span>
+    <input type="checkbox" name="" id="" [(ngModel)]="t.done">
+    <input type="text" name="" id="" [(ngModel)]="t.name">
+    </span></li>
+</ul>
+
+<hr>
+<form (submit)="addTodo()">
+  <input type="text" name="newTodo" id="" [(ngModel)]="newTodo" autofocus>
+  <input type="submit" value="Add">
+</form>
