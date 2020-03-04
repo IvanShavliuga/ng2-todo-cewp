@@ -10,13 +10,14 @@ export class AppComponent {
   title = 'Todo List';
 
   todos = [
-    { name: 'first', done: false },
-    { name: 'second', done: false },
-    { name: 'third', done: true },
+    { name: 'Ann', city: 'New York', age: 30, done: false },
+    { name: 'Jhon', city: 'Paris', age:25, done: false },
+    { name: 'Max', city: 'Moskow', age:23, done: true }
   ];
 
-  newTodo = '';
-
+  newTodo = 'Ivan';
+  newAge = 30;
+  newCity = "Novopolotsk";
   archive() {
     const oldTodos = this.todos;
     this.todos = [];
@@ -38,7 +39,7 @@ export class AppComponent {
   }
 
   addTodo() {
-    const t = { name: this.newTodo, done: false };
+    const t = { name: this.newTodo,city: this.newCity,age: this.newAge, done: false };
     this.todos.push(t);
     this.newTodo = '';
   }

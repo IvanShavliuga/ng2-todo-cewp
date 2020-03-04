@@ -12,14 +12,18 @@
 <ul>
   <li *ngFor="let t of todos"><span>
     <input type="checkbox" name="" id="" [(ngModel)]="t.done">
-    <input type="text" name="" id="" [(ngModel)]="t.name">
+    <input type="text" name="" id="" [(ngModel)]="t.name" class="input__field">
+    <input type="text" name="" id="" [(ngModel)]="t.age"  class="input__field input__number">
+    <input type="text" name="" id="" [(ngModel)]="t.city" class="input__field">
     </span></li>
 </ul>
 
 <hr>
 <form (submit)="addTodo()">
-  <input type="text" name="newTodo" id="" [(ngModel)]="newTodo" autofocus>
-  <input type="submit" value="Add">
+  <input type="text" name="newTodo" id="" [(ngModel)]="newTodo" autofocus class="input__field">
+  <input type="text" name="newAge" id="" [(ngModel)]="newAge"  class="input__field input__number">
+  <input type="text" name="newCity" id="" [(ngModel)]="newCity" class="input__field">
+  <input type="submit" value="Add" class="button">
 </form>
 
 </main>
