@@ -12,7 +12,8 @@ export class AppComponent {
   todos = [
     { name: 'Ann', city: 'New York', age: 30, done: false },
     { name: 'Jhon', city: 'Paris', age:25, done: false },
-    { name: 'Max', city: 'Moskow', age:23, done: true }
+    { name: 'Max', city: 'Moskow', age:23, done: true },
+    { name: 'Steven', city: 'Lion', age:23, done: true }
   ];
 
   newTodo = 'Ivan';
